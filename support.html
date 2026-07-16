@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help &amp; Support - Crypto Analyzer</title>
+    <meta name="description" content="Help, import guidance, privacy information, and support contacts for Crypto Analyzer on iPhone and iPad.">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #ffffff;
+            --surface: #f3f6fa;
+            --text: #182235;
+            --muted: #536176;
+            --accent: #005fc5;
+            --border: #c9d3df;
+            --warning: #fff5d6;
+            --warning-border: #9a6500;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #0c1728;
+                --surface: #15243a;
+                --text: #f2f6fb;
+                --muted: #c0cada;
+                --accent: #79b8ff;
+                --border: #3b4d66;
+                --warning: #332810;
+                --warning-border: #f3be47;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        main, header, footer {
+            width: min(800px, calc(100% - 32px));
+            margin-inline: auto;
+        }
+
+        header {
+            padding: 56px 0 28px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            color: var(--accent);
+            font-size: clamp(2rem, 7vw, 3rem);
+            line-height: 1.15;
+        }
+
+        h2 { margin-top: 40px; line-height: 1.25; }
+        h3 { margin-bottom: 4px; line-height: 1.3; }
+        p { margin: 8px 0 16px; }
+        ul, ol { padding-left: 24px; }
+        li { margin: 8px 0; }
+
+        a {
+            color: var(--accent);
+            text-underline-offset: 3px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+            border-radius: 3px;
+        }
+
+        .lede { color: var(--muted); font-size: 1.1rem; }
+
+        .card {
+            margin: 24px 0;
+            padding: 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .warning {
+            background: var(--warning);
+            border-left: 4px solid var(--warning-border);
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 28px 0;
+        }
+
+        .action {
+            display: block;
+            min-height: 48px;
+            padding: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-weight: 650;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding: 24px 0 48px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crypto Analyzer Support</h1>
+        <p class="lede">Help with private CSV import, portfolio analysis, fees, and UK capital-gains reports on iPhone and iPad.</p>
+        <p>Last updated: 16 July 2026</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get help</h2>
+            <p>The fastest starting point is <strong>Settings → Help &amp; Support</strong> inside the app. It includes searchable Q&amp;A, a glossary, system information, and an optional privacy-clean diagnostic export.</p>
+
+            <div class="actions">
+                <a class="action" href="https://github.com/X0x888/Portfolio-App-Privacy/issues/new">Open a support request on GitHub</a>
+                <a class="action" href="mailto:hi@cryptoanalyzer.app?subject=Crypto%20Analyzer%20Support">Email Crypto Analyzer support</a>
+                <a class="action" href="index.html">Read the Privacy Policy</a>
+                <a class="action" href="https://apps.apple.com/gb/app/crypto-analyzer/id6746950680">View Crypto Analyzer on the App Store</a>
+            </div>
+
+            <div class="card warning">
+                <strong>Protect your financial privacy.</strong>
+                <p>Never post a real exchange CSV, wallet address, transaction ID, tax reference, API key, seed phrase, or portfolio balance in a public support request. Use synthetic examples. Nothing is uploaded automatically by the app.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="import-heading">
+            <h2 id="import-heading">Import help</h2>
+            <p>Crypto Analyzer supports verified spot-history formats from:</p>
+            <ul>
+                <li>Coinbase retail and Advanced Trade transaction history</li>
+                <li>Coinbase Pro fills</li>
+                <li>Crypto.com App Token Wallet transaction history</li>
+                <li>Binance Spot transaction history</li>
+                <li>Kraken Ledgers</li>
+            </ul>
+            <p>Open <strong>Settings → Import CSV</strong> or use the in-app CSV Export Guide. The app detects the exchange from the file header. If an exchange changes its format, the import fails with an explanation rather than guessing how a row affects holdings or tax.</p>
+
+            <div class="card">
+                <h3>Before sending a support request</h3>
+                <ol>
+                    <li>Confirm the file came from the supported report named in the in-app guide.</li>
+                    <li>Do not open and resave the CSV in a spreadsheet app before the first import attempt.</li>
+                    <li>Read the import receipt for unsupported rows, missing columns, duplicates, or mixed account scope.</li>
+                    <li>If needed, export diagnostics from Settings and review the file before sharing it.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <h3>Can I try the app without my own data?</h3>
+            <p>Yes. Choose <strong>Try Demo First</strong> during onboarding. Demo values are synthetic and labelled throughout the app.</p>
+
+            <h3>Does the app connect to my exchange account?</h3>
+            <p>No. Exchange transactions are imported from files you select. The app does not ask for exchange credentials and cannot trade, transfer, or custody cryptocurrency.</p>
+
+            <h3>Does my portfolio leave my device?</h3>
+            <p>Transaction, wallet, portfolio, and tax data stays on your device. Market-price, token-logo, and USD-to-GBP services receive only the symbols, trading pairs, and dates needed to answer a request. Crypto Analyzer has no analytics, advertising, or tracking SDK.</p>
+
+            <h3>Why does Dashboard profit differ from Tax &amp; Fees?</h3>
+            <p>The dashboard is a performance view. The UK tax view applies HMRC share-matching in the required order: same-day, acquisitions in the following 30 days, then the Section 104 pool. Rebuying after a disposal can therefore produce a different cost basis.</p>
+
+            <h3>Can I file directly from the app?</h3>
+            <p>No. Filing Packs and SA108-aligned worksheets are preparation aids for you or your accountant. Verify all figures and use HMRC or your chosen filing service to submit. Crypto Analyzer does not provide tax, legal, financial, or investment advice.</p>
+
+            <h3>How do I delete my data?</h3>
+            <p>Use <strong>Settings → Clear Saved Data</strong>. You can also revoke consent from the in-app Privacy Policy or Terms screen, which starts the local erasure flow. Deleting the app removes its remaining app container from the device.</p>
+
+            <h3>What if current prices do not load?</h3>
+            <p>The app checks its memory, user cache, bundled offline database, and several public sources. Review <strong>Settings → Price Data</strong> for source health and per-token retry controls. Historical tax calculations retain their recorded source and do not silently replace a missing value with an unrelated token.</p>
+        </section>
+
+        <section aria-labelledby="accessibility-heading">
+            <h2 id="accessibility-heading">Accessibility</h2>
+            <p>Crypto Analyzer supports VoiceOver labels, Dynamic Type, light and dark interfaces, reduced motion, increased contrast, and status cues that do not rely on colour alone. Include your device model, iOS or iPadOS version, text size, and assistive feature in an accessibility support request.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crypto Analyzer. All rights reserved.</p>
+        <p>Crypto Analyzer is developed by Shanglong Ning.</p>
+        <p><a href="index.html">Privacy Policy</a> · <a href="https://apps.apple.com/gb/app/crypto-analyzer/id6746950680">App Store</a></p>
+    </footer>
+</body>
+</html>
