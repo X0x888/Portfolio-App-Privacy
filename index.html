@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,7 +135,7 @@
     <header class="header">
         <h1>Privacy Policy</h1>
         <p class="subtitle">Crypto Analyzer</p>
-        <p class="last-updated">Last Updated: 16 July 2026</p>
+        <p class="last-updated">Last Updated: 17 July 2026</p>
         <p><a href="support.html">Help &amp; Support</a></p>
     </header>
 
@@ -160,7 +160,7 @@
             <h2>1. Introduction and Data Controller</h2>
             <p>This Privacy Policy describes how the Crypto Analyzer app ("we," "our," or "the App") collects, uses, and protects your information. We are committed to protecting your privacy and ensuring the security of your financial data.</p>
             
-            <p><strong>Data Controller:</strong> We are the data controller for the personal data processed through this App. Our contact details are available through the App's Help &amp; Support section.</p>
+            <p><strong>Data Controller:</strong> Crypto Analyzer is developed and operated by Shanglong Ning, who is the data controller for personal data processed through the App. Contact <a href="mailto:hi@cryptoanalyzer.app">hi@cryptoanalyzer.app</a> or use the <a href="support.html">Help &amp; Support page</a>.</p>
             
             <p><strong>Legal Basis:</strong> We process your personal data in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
         </section>
@@ -168,18 +168,17 @@
         <section id="information-collected">
             <h2>2. Information We Collect</h2>
             
-            <h3>Personal Data Collected Directly From You:</h3>
+            <h3>Information Processed on Your Device:</h3>
             <ul>
                 <li><strong>Transaction Data:</strong> CSV files you import containing your cryptocurrency transaction history, including dates, amounts, prices, fees, and transaction types</li>
                 <li><strong>Portfolio Information:</strong> Calculated values including asset quantities, average costs, profit/loss calculations, and fee analyses derived from your transaction data</li>
                 <li><strong>App Preferences:</strong> Settings such as default chart timeframes, appearance preferences, price refresh frequency levels, and onboarding completion status</li>
-                <li><strong>Device Information:</strong> Information necessary for app functionality, including device type, operating system version, and app version</li>
             </ul>
 
-            <h3>Data Collected Automatically:</h3>
+            <h3>Limited Data Sent for App Functionality:</h3>
             <ul>
-                <li><strong>Price Data:</strong> Historical and current cryptocurrency prices fetched from external APIs to calculate your portfolio value</li>
-                <li><strong>Error Logs:</strong> Technical information to diagnose and fix app issues (anonymised, kept on this device, and shared only when you explicitly export diagnostics)</li>
+                <li><strong>Market-Data Requests:</strong> Token symbols or trading pairs, dates where required, optional provider API keys, and normal connection metadata are sent to the services listed below. Providers may retain limited request, device, account, or usage information under their own policies</li>
+                <li><strong>Diagnostics:</strong> Technical diagnostics and device/app version details stay on the device unless you explicitly export and share a diagnostic file. The App does not upload crash or usage telemetry automatically</li>
             </ul>
 
             <div class="highlight-box">
@@ -202,12 +201,12 @@
                 <li><strong>Price Updates:</strong> Fetch current market prices to provide real-time portfolio valuations</li>
                 <li><strong>Export Functionality:</strong> Allow you to export your analysed data in various formats (CSV, PDF, Markdown, Text)</li>
                 <li><strong>App Improvements:</strong> Store preferences to enhance your user experience</li>
-                <li><strong>Technical Support:</strong> Diagnose and resolve technical issues (using anonymised data only)</li>
+                <li><strong>Technical Support:</strong> Diagnose issues using a redacted diagnostic export only when you explicitly choose to share one</li>
                 <li><strong>Compliance:</strong> Meet legal obligations where applicable</li>
             </ul>
 
             <div class="highlight-box">
-                <h3>We do not use your data for:</h3>
+                <h3>Crypto Analyzer does not use your financial records for:</h3>
                 <ul>
                     <li>Marketing or advertising purposes</li>
                     <li>Profiling or automated decision-making</li>
@@ -222,16 +221,17 @@
             
             <h3>Local Storage:</h3>
             <ul>
-                <li><strong>Device-Only Storage:</strong> All your transaction data and portfolio information is stored locally on your device in a SQLite database</li>
+                <li><strong>Device-Only Storage:</strong> Transaction, portfolio, filing, and tax records are stored in the App's protected local files and databases; provider keys and selected taxpayer fields use the iOS Keychain</li>
                 <li><strong>No Cloud Storage:</strong> We do not store your financial data on our servers or in the cloud</li>
-                <li><strong>Local File Protection:</strong> Your data is protected by iOS device-level security and app sandboxing</li>
-                <li><strong>Secure File Handling:</strong> Imported CSV files are processed locally and can be deleted after import</li>
+                <li><strong>Local File Protection:</strong> Local stores use iOS Data Protection and app sandboxing</li>
+                <li><strong>Secure File Handling:</strong> A selected CSV or ZIP is parsed locally; the original remains under the control of the Files provider you selected</li>
+                <li><strong>Optional Reminders Item:</strong> If you tap “Add deadline reminder,” the App writes the displayed tax-year reminder and a short filing-receipt reference to Reminders.app. Apple may sync that item through your iCloud settings; it remains under your control in Reminders and is not sent to Crypto Analyzer</li>
             </ul>
 
             <h3>Security Measures:</h3>
             <ul>
-                <li><strong>Device Security:</strong> Your data is protected by iOS device-level security features including device encryption when enabled</li>
-                <li><strong>Access Controls:</strong> App-level security prevents unauthorised access to your data</li>
+                <li><strong>Device Security:</strong> Your data is protected by iOS device encryption, Data Protection, and the passcode or biometrics configured on your device</li>
+                <li><strong>Access Controls:</strong> Sensitive filing, import, and shortcut actions use Face ID or the device passcode where the App presents an authentication gate</li>
                 <li><strong>Regular Updates:</strong> Security patches are delivered through app updates</li>
                 <li><strong>Secure Communication:</strong> All API communications use HTTPS encryption</li>
             </ul>
@@ -239,8 +239,10 @@
             <h3>Data Retention:</h3>
             <ul>
                 <li><strong>User Control:</strong> Data is retained until you choose to delete it</li>
-                <li><strong>No Portfolio Retention:</strong> Our managed price server does not retain request logs, and no external provider receives your portfolio or tax data. Third-party providers may retain connection metadata under their own policies</li>
-                <li><strong>Complete Deletion:</strong> Use "Clear Saved Data" to permanently remove all information</li>
+                <li><strong>No Financial-Record Retention:</strong> Our managed price server does not retain request logs. External providers never receive transaction history, quantities, balances, tax records, filing identity, or wallet addresses, but may retain the limited symbol, date, provider-account, and connection metadata described below under their own policies</li>
+                <li><strong>Portfolio Reset:</strong> "Clear Saved Data" removes imported portfolios, analysis, filing records, manual prices, local filing notifications, and any app-created Reminders items the App is still permitted to access. It keeps preferences and saved API keys</li>
+                <li><strong>Complete In-App Erasure:</strong> Revoke consent and choose to delete data to remove the App's local stores, preferences, diagnostics, and Keychain entries. If Reminders access was revoked first, remove any Crypto Analyzer filing reminder directly in Reminders.app</li>
+                <li><strong>Files Outside the App:</strong> CSV, PDF, ZIP, database, or diagnostic files you exported remain where you saved or shared them and must be deleted there separately</li>
             </ul>
         </section>
 
@@ -259,29 +261,31 @@
                 <li><strong>DeFiLlama API:</strong> Fallback source for price data in batch requests</li>
                 <li><strong>Messari, MEXC, KuCoin, Gate.io, OKX, and Bitfinex APIs:</strong> Long-tail price fallbacks</li>
                 <li><strong>Trust Wallet Assets CDN and CoinGecko image CDNs:</strong> Token logo images</li>
-                <li><strong>Frankfurter API:</strong> USD to GBP exchange rates used in HMRC tax calculations; requests contain a currency pair and calendar date, not personal data</li>
+                <li><strong>Frankfurter API:</strong> USD to GBP exchange rates used in HMRC tax calculations; application fields are the currency pair and calendar date, and normal connection metadata still applies</li>
             </ul>
 
             <h3>Data Transmitted to APIs:</h3>
             <ul>
-                <li><strong>Cryptocurrency symbols only:</strong> The managed API receives one canonical ticker in the static-file path. No amount, balance, transaction, wallet address, account identifier, or advertising ID is transmitted; access logging is disabled. Like every internet request, the destination can see the source IP while servicing it</li>
+                <li><strong>Managed API:</strong> The managed API receives one canonical ticker in the static-file path. No amount, balance, transaction, wallet address, account identifier, or advertising ID is transmitted; its access logging is disabled</li>
                 <li><strong>Timestamps:</strong> For historical price data requests</li>
-                <li><strong>Batch requests:</strong> Some providers (CoinGecko, DeFiLlama, Binance, and Coinbase, including Coinbase's live-price WebSocket) can receive the list of token symbols you hold in a single request. Logo lookups reveal individual held symbols to logo services. This is necessary to price and display your portfolio and is used only to answer the request</li>
-                <li><strong>No transaction details:</strong> Your amounts, balances, trades, and personal details never leave your device</li>
+                <li><strong>Batch requests:</strong> Some providers (CoinGecko, DeFiLlama, Binance, and Coinbase, including Coinbase's live-price WebSocket) can receive the list of token symbols you hold in a single request. Logo lookups reveal individual held symbols to logo services. The App sends these fields only to request price or logo functionality; providers process them under their own policies</li>
+                <li><strong>Provider accounts and connection data:</strong> If you save an optional provider API key, requests to that provider are linked to your account there. Every destination receives normal connection metadata such as source IP, and third-party providers may retain limited request, device, account, or usage information under their own policies</li>
+                <li><strong>Request minimisation:</strong> Production network sessions reject provider cookies, shared credentials, and URL caching. This prevents persistent provider identifiers in later App requests but does not hide the source IP or optional API key</li>
+                <li><strong>No transaction details:</strong> Your transaction history, quantities, balances, wallet addresses, filing identity, and tax records never leave your device</li>
             </ul>
 
             <div class="highlight-box">
                 <h3>Data Sharing Policy:</h3>
                 <ul>
-                    <li><strong>No Portfolio Data Sharing:</strong> We do not sell, trade, or share your personal information, transaction history, quantities, balances, tax data, filing identity, or wallet addresses with third parties</li>
-                    <li><strong>No Marketing Data:</strong> We do not share data for marketing or advertising purposes</li>
+                    <li><strong>No Financial-Record Sharing:</strong> We do not sell, trade, or share your transaction history, quantities, balances, tax data, filing identity, or wallet addresses with third parties</li>
+                    <li><strong>No Marketing Purpose:</strong> We do not send market-data request fields for marketing or advertising and do not sell them. Providers process the limited fields under their own policies</li>
                     <li><strong>Legal Compliance:</strong> We may disclose data if required by law, but given our local storage model, we typically have no data to disclose</li>
                 </ul>
             </div>
 
             <h3>Service Providers:</h3>
             <ul>
-                <li><strong>No Portfolio Processing:</strong> Neither our managed price server nor external providers receive or process your transaction history, quantities, balances, tax data, filing identity, or wallet addresses</li>
+                <li><strong>No Financial-Record Processing:</strong> Neither our managed price server nor external providers receive or process your transaction history, quantities, balances, tax data, filing identity, or wallet addresses</li>
                 <li><strong>API Rate Limiting:</strong> We implement measures to minimise API usage and protect your privacy</li>
             </ul>
         </section>
@@ -300,7 +304,7 @@
             <h3>Control Rights:</h3>
             <ul>
                 <li><strong>Right to Rectification:</strong> Edit or update your transaction data and preferences within the app</li>
-                <li><strong>Right to Erasure:</strong> Clear all stored data using the "Clear Saved Data" feature or choose to delete data when revoking consent</li>
+                <li><strong>Right to Erasure:</strong> Revoke consent and choose to delete data for complete in-app erasure. Use "Clear Saved Data" when you only want to remove portfolio and tax data while keeping preferences and saved API keys</li>
                 <li><strong>Right to Restrict Processing:</strong> Control how your data is used through app settings</li>
                 <li><strong>Right to Object:</strong> Opt out of non-essential data processing</li>
             </ul>
@@ -317,7 +321,7 @@
                 <ul>
                     <li><strong>In-App Controls:</strong> Most rights can be exercised directly through the app interface</li>
                     <li><strong>Consent Revocation:</strong> Access consent management through Settings → Privacy Policy or Terms of Service</li>
-                    <li><strong>Data Deletion Options:</strong> Choose to delete all local data when revoking consent, or use "Clear Saved Data" in Settings</li>
+                    <li><strong>Data Deletion Options:</strong> Choose to delete all in-app data when revoking consent, or use "Clear Saved Data" in Settings for a portfolio-and-tax reset. Delete previously exported files and inaccessible Reminders items in the apps where you saved them</li>
                     <li><strong>Contact Us:</strong> For complex requests, contact us through the Help &amp; Support section</li>
                     <li><strong>Response Time:</strong> We will respond to requests within one month</li>
                     <li><strong>No Fee:</strong> Exercising your rights is free of charge</li>
@@ -337,35 +341,27 @@
             <h3>Limited International Transfers:</h3>
             <ul>
                 <li><strong>API Requests:</strong> When fetching price data, requests may be processed by servers in various countries</li>
-                <li><strong>No Portfolio Data:</strong> These requests contain only cryptocurrency symbols, timestamps where required, and normal internet connection metadata such as the source IP while a request is serviced. They never contain transaction history, quantities, balances, tax data, filing identity, or wallet addresses</li>
-                <li><strong>Adequate Protection:</strong> We only use price data providers with appropriate security measures</li>
+                <li><strong>No Financial Records:</strong> These requests contain only cryptocurrency symbols or trading pairs, dates where required, optional provider-account API keys, and normal internet connection metadata such as the source IP. They never contain transaction history, quantities, balances, tax data, filing identity, or wallet addresses</li>
+                <li><strong>Provider Terms:</strong> Third-party processing is governed by each provider's privacy policy and service terms</li>
             </ul>
 
             <h3>UK Data Protection:</h3>
             <ul>
                 <li><strong>Local Processing:</strong> Transaction, wallet, portfolio, and tax processing occurs on your device, wherever the device is located</li>
-                <li><strong>No Server Transfer of Portfolio Data:</strong> We do not transfer your transaction history, quantities, balances, tax data, filing identity, or wallet addresses to our servers or external providers. The limited international market-data requests are described above</li>
-                <li><strong>UK GDPR Compliance:</strong> All processing complies with UK data protection standards</li>
+                <li><strong>No Server Transfer of Financial Records:</strong> We do not transfer your transaction history, quantities, balances, tax data, filing identity, or wallet addresses to our servers or external providers. The limited international market-data requests are described above</li>
+                <li><strong>UK Data Protection:</strong> App-controlled processing is handled under the UK data-protection commitments described in this policy</li>
             </ul>
         </section>
 
         <section id="children-privacy">
             <h2>8. Children's Privacy</h2>
             
-            <h3>Age Rating and Suitability:</h3>
             <ul>
-                <li><strong>Age Rating:</strong> This App has a 4+ age rating, indicating it contains no objectionable content</li>
-                <li><strong>Educational Tool:</strong> The app serves as an educational portfolio tracking and analysis tool</li>
-                <li><strong>Parental Guidance:</strong> While suitable for all ages, parental guidance is recommended for younger users managing financial data</li>
-                <li><strong>No Age Restrictions:</strong> No minimum age requirement for app usage</li>
-            </ul>
-
-            <h3>Child-Safe Design:</h3>
-            <ul>
-                <li><strong>No Social Features:</strong> The app contains no social networking or user-generated content features</li>
-                <li><strong>Educational Content:</strong> All features focus on data analysis and educational portfolio tracking</li>
-                <li><strong>Privacy Protection:</strong> Sensitive financial records are stored locally. Only the limited market-data request fields described above are sent to external providers</li>
-                <li><strong>Safe Content:</strong> No inappropriate, violent, or mature content present</li>
+                <li><strong>Not Directed to Children:</strong> Crypto Analyzer is a financial record-keeping tool and is not designed or marketed specifically for children</li>
+                <li><strong>No Child Account:</strong> The App has no account system and does not ask for a user's name, email address, date of birth, or age</li>
+                <li><strong>No Social or Trading Features:</strong> The App has no chat, social feed, advertising, in-app purchases, trade execution, custody, or token rewards</li>
+                <li><strong>Parental Supervision:</strong> A parent or guardian should supervise a young person's use of financial records and exported files</li>
+                <li><strong>Privacy Protection:</strong> Sensitive financial records stay local. Only the limited market-data request fields described above are sent to external providers</li>
             </ul>
         </section>
 
@@ -375,16 +371,16 @@
             <h3>Policy Updates:</h3>
             <ul>
                 <li><strong>Regular Reviews:</strong> We review this Privacy Policy regularly to ensure it remains current</li>
-                <li><strong>Change Notification:</strong> Material changes will be communicated through the app or by email</li>
-                <li><strong>Advance Notice:</strong> Users will receive at least 30 days' notice of significant changes</li>
-                <li><strong>Continued Use:</strong> Continued use of the App after changes constitutes acceptance of the updated policy</li>
+                <li><strong>Change Notification:</strong> Material changes will be identified in the App, the public policy, or release notes as appropriate</li>
+                <li><strong>Renewed Choice:</strong> The App will request renewed consent where applicable law or the nature of a change requires it</li>
+                <li><strong>Effective Date:</strong> Changes take effect on the date stated in the updated policy unless a later date is specified</li>
             </ul>
 
             <h3>Version Control:</h3>
             <ul>
                 <li><strong>Last Updated Date:</strong> Always clearly displayed</li>
-                <li><strong>Change History:</strong> Previous versions available on request</li>
-                <li><strong>Granular Changes:</strong> Specific changes will be highlighted where material</li>
+                <li><strong>Change History:</strong> Previous versions are retained in the project's published version history and are available on request</li>
+                <li><strong>Material Changes:</strong> Significant changes will be described where appropriate</li>
             </ul>
         </section>
 
@@ -393,19 +389,19 @@
             
             <div class="contact-info">
                 <h3>Data Protection Enquiries</h3>
-                <p>If you have questions about this Privacy Policy or how your data is handled, please contact us through the app's Help &amp; Support section.</p>
+                <p>If you have questions about this Privacy Policy or how your data is handled, contact <a href="mailto:hi@cryptoanalyzer.app">hi@cryptoanalyzer.app</a> or use the <a href="support.html">Help &amp; Support page</a>.</p>
                 
                 <h4>Response Times:</h4>
                 <ul style="text-align: left; display: inline-block;">
                     <li><strong>General Enquiries:</strong> We aim to respond within 5 working days</li>
                     <li><strong>Data Subject Rights:</strong> We will respond within one month as required by law</li>
-                    <li><strong>Urgent Issues:</strong> Contact details for urgent privacy concerns are available in the app</li>
+                    <li><strong>Urgent Issues:</strong> Use hi@cryptoanalyzer.app and describe the issue as urgent</li>
                 </ul>
 
-                <h4>Data Protection Officer:</h4>
+                <h4>Privacy Contact:</h4>
                 <ul style="text-align: left; display: inline-block;">
-                    <li><strong>Availability:</strong> Contact details available through the Help &amp; Support section</li>
-                    <li><strong>Role:</strong> Available to assist with privacy-related questions and concerns</li>
+                    <li><strong>Controller:</strong> Shanglong Ning, developer and operator of Crypto Analyzer</li>
+                    <li><strong>Contact:</strong> hi@cryptoanalyzer.app</li>
                 </ul>
             </div>
         </section>
@@ -413,7 +409,7 @@
 
     <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #E5E5E7; text-align: center; color: #666; font-size: 0.9em;">
         <p>&copy; 2026 Crypto Analyzer. All rights reserved.</p>
-        <p>This privacy policy is effective as of 16 July 2026.</p>
+        <p>This privacy policy is effective as of 17 July 2026.</p>
         <p><a href="support.html">Help &amp; Support</a></p>
     </footer>
 </body>
